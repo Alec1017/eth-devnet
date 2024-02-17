@@ -1,12 +1,10 @@
 participants:
-
   ##############################
   # Node 1 (geth + lighthouse) #
   ##############################
   - el_client_type: geth
     cl_client_type: lighthouse
   
-
   ##############################
   # Node 2 (nethermind + teku) #
   ##############################
@@ -19,11 +17,15 @@ participants:
   - el_client_type: besu
     cl_client_type: prysm
 
+network_params:
+  # should be using the deneb fork right away
+  deneb_fork_epoch: 500
+
 additional_services:
+  - assertoor
   - tx_spammer
   - blob_spammer
   - el_forkmon
   - dora
   - blockscout
   - blobscan
-  
