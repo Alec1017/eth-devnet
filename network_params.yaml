@@ -1,0 +1,29 @@
+participants:
+
+  ##############################
+  # Node 1 (geth + lighthouse) #
+  ##############################
+  - el_client_type: geth
+    cl_client_type: lighthouse
+  
+
+  ##############################
+  # Node 2 (nethermind + teku) #
+  ##############################
+  - el_client_type: nethermind
+    cl_client_type: teku
+
+  ##############################
+  # Node 3 (besu + prysm)      #
+  ##############################
+  - el_client_type: besu
+    cl_client_type: prysm
+
+additional_services:
+  - tx_spammer
+  - blob_spammer
+  - el_forkmon
+  - dora
+  - blockscout
+  - blobscan
+  
